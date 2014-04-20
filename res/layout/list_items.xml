@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:caca="http://schemas.android.com/apk/res/com.towerlabs.yildizyemek"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@id/list_icon"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/caca" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="@dimen/padding_10dp"
+        android:weightSum="2" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.towerlabs.yildizyemek.customviews.CustomTextView
+                android:id="@id/list_title"
+                android:text="@string/developer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                caca:customFont="Lato-Regular.ttf" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.towerlabs.yildizyemek.customviews.CustomTextView
+                android:id="@id/list_subtitle"
+                android:text="@string/developer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/twitter_nick"
+                caca:customFont="Lato-Regular.ttf" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

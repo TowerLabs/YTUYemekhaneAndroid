@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#ede9e6</color>
+    <color name="buttons_layout">#f7f7f5</color>
+    <color name="actionbar_background">#ea9054</color>
+    <color name="twitter_nick">#e1dbcf</color>
+</resources>

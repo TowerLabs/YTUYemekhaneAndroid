@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:caca="http://schemas.android.com/apk/res/com.towerlabs.yildizyemek"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/horizontal_margin_20dp"
+        android:layout_marginRight="@dimen/horizontal_margin_20dp"
+        android:layout_marginTop="@dimen/vertical_margin_15dp"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <com.towerlabs.yildizyemek.customviews.CustomTextView
+            android:id="@id/date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:gravity="center"
+            caca:customFont="Lato-Bold.ttf" />
+
+        <com.towerlabs.yildizyemek.customviews.CustomTextView
+            android:id="@id/date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:gravity="center"
+            android:text="@string/lunch"
+            caca:customFont="Lato-Bold.ttf" />
+
+        <com.towerlabs.yildizyemek.customviews.CustomTextView
+            android:id="@id/main_lunch"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:gravity="left"
+            caca:customFont="Lato-Regular.ttf" />
+
+        <com.towerlabs.yildizyemek.customviews.CustomTextView
+            android:id="@id/alt_lunch"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:gravity="left"
+            caca:customFont="Lato-Regular.ttf" />
+
+        <com.towerlabs.yildizyemek.customviews.CustomTextView
+            android:id="@id/date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:gravity="center"
+            android:text="@string/dinner"
+            caca:customFont="Lato-Bold.ttf" />
+
+        <com.towerlabs.yildizyemek.customviews.CustomTextView
+            android:id="@id/main_dinner"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:gravity="left"
+            caca:customFont="Lato-Regular.ttf" />
+
+        <com.towerlabs.yildizyemek.customviews.CustomTextView
+            android:id="@id/alt_dinner"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            caca:customFont="Lato-Regular.ttf" />
+    </LinearLayout>
+
+</LinearLayout>

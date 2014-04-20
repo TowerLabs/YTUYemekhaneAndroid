@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:caca="http://schemas.android.com/apk/res/com.towerlabs.yildizyemek"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/general_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:background="@drawable/border"
+        android:weightSum="2" >
+
+        <com.towerlabs.yildizyemek.customviews.CustomButton
+            android:id="@id/main_button_main"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/dialog_icon_desc"
+            android:drawableTop="@drawable/fooddark"
+            android:text="@string/lunch_list"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            caca:customFont="Lato-Regular.ttf" />
+
+        <com.towerlabs.yildizyemek.customviews.CustomButton
+            android:id="@id/about_button_main"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/dialog_icon_desc"
+            android:drawableTop="@drawable/team"
+            android:text="@string/about_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            caca:customFont="Lato-Regular.ttf" />
+    </TableRow>
+
+</LinearLayout>

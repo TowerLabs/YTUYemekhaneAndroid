@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Description -->
+<resources>
+
+    <string name="app_name">Yıldız Yemek</string>
+    <string name="lunch">Öğle Yemeği</string>
+    <string name="dinner">Akşam Yemeği</string>
+    <string name="dialog_icon_desc">Desc</string>
+    <string name="dialog_ok">Tamam</string>
+    <string name="dialog_yes">Evet</string>
+    <string name="dialog_cancel">Hayır</string>
+    <string name="dialog_neutral">Değerledir</string>
+    <string name="dialog_never_ask">Sorma</string>
+    <string name="dialog_after">Daha Sonra</string>
+    <string name="score_text">Ugulamamızı değerlendirmek ister misiniz ? </string>
+    <string name="score_title">Değerlendir</string>
+    <string name="exit_message">Çıkmak istiyor musunuz ?</string>
+    <string name="exit_dialog_title">Çıkış</string>
+    <string name="connection_error_msg">Bağlantı hatası.</string>
+    <string name="new_list_error_msg">Bu aya ait liste henüz yayınlanmadı.</string>
+    <string name="error">Hata</string>
+    <string name="main_button_text">Yemek Listesi</string>
+    <string name="about_button_text">Hakkımızda</string>
+    <string name="desc">description</string>
+    <string name="lunch_list">Yemek Listesi</string>
+    <string name="about_text">Hakkımızda</string>
+    <string name="designer">Davut Uçar</string>
+    <string name="developer">Çağdaş Çağlak</string>
+    <string name="designer_twitter">\@davutucar</string>
+    <string name="developer_twitter">+cagdascaglak</string>
+    
+
+</resources>

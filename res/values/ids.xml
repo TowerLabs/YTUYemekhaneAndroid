@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="viewpager" type="id">viewpager</item>
+    <item name="date_textview" type="id">date_text</item>
+    <item name="main_lunch" type="id">main_lunch</item>
+    <item name="alt_lunch" type="id">alt_lunch</item>
+    <item name="main_dinner" type="id">main_dinner</item>
+    <item name="alt_dinner" type="id">alt_dinner</item>
+    <item name="dialog_icon" type="id">dilog_icon</item>
+    <item name="dialog_ok_button" type="id">ok_button</item>
+    <item name="dialog_cancel_button" type="id">cancel_button</item>
+    <item name="dialog_message_text" type="id">dialog_message_text</item>
+    <item name="main_button_main" type="id">main_button_main</item>
+    <item name="about_button_main" type="id">about_button_main</item>
+    <item name="main_button_about" type="id">main_button_about</item>
+    <item name="about_button_about" type="id">about_button_about</item>
+    <item name="drawer_layout" type="id">drawer_layout</item>
+    <item name="list_view" type="id">list_view</item>
+    <item name="web_frame" type="id">web_frame</item>
+    <item name="list_icon" type="id">list_icon</item>
+    <item name="list_title" type="id">list_title</item>
+    <item name="list_subtitle" type="id">list_subtitle</item>
+    <item name="web_view" type="id">"web_view"</item>
+    <item name="designer_button" type="id">"designer_button"</item>
+    <item name="developer_button" type="id">"developer_button"</item>
+    <item name="designer_twitter_button" type="id">"designer_twitter_button"</item>
+    <item name="developer_twitter_button" type="id">"developer_twitter_button"</item>
+
+</resources>
