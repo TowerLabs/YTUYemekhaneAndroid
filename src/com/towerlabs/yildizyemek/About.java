@@ -29,7 +29,7 @@ public class About extends Fragment implements OnItemClickListener {
 	public static boolean isWebPageOpen = false;
 
 	private String designer_url = "https://twitter.com/mesutuntorunu";
-	private String developer_url = "https://plus.google.com/u/0/+cagdascaglak/posts";
+	private String developer_url = "https://plus.google.com/app/basic/+cagdascaglak/posts";
 
 	private Integer[] icons;
 	private Integer[] titles;
