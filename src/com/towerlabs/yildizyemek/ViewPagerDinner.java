@@ -110,7 +110,7 @@ public class ViewPagerDinner extends Fragment {
 
 		httpTask = new HttpTask();
 		urls = new String[1];
-		urls[0] = "API Link is here";
+		urls[0] = APILink.link;
 
 		if (fileIsExist()) {
 

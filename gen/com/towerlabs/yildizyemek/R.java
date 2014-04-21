@@ -1588,7 +1588,6 @@ containing a value of this type.
          */
         public static final int CustomActionBar=0x7f0a008b;
         /**  My Custom Theme for ActionBar Color 
- the theme applied to the application or activity 
          */
         public static final int CustomActionBarTheme=0x7f0a008a;
         /**  Mimic text appearance in select_dialog_item.xml 

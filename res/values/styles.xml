@@ -19,15 +19,12 @@
 
     <!-- My Custom Theme for ActionBar Color -->
 
-
-    <!-- the theme applied to the application or activity -->
     <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:actionBarStyle">@style/CustomActionBar</item>
+        <item name="actionBarStyle">@style/CustomActionBar</item>
     </style>
 
-    <!-- ActionBar styles -->
     <style name="CustomActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@color/actionbar_background</item>
+        <item name="background">@color/actionbar_background</item>
     </style>
 
 </resources>

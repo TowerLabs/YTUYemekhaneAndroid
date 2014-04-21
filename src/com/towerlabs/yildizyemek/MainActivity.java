@@ -75,38 +75,38 @@ public class MainActivity extends ActionBarActivity implements
 		// TODO Auto-generated method stub
 		super.onResume();
 
-		if (askStatus == true) {
-			startCounter++;
-
-			if (startCounter == 5) {
-				scoreDialog();
-			}
-
-		} else {
-			startCounter = 0;
-		}
-
-	}
-
-	@Override
-	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
-		super.onRestoreInstanceState(savedInstanceState);
-
-		startCounter = savedInstanceState.getInt("Counter");
-		askStatus = savedInstanceState.getBoolean("Ask Status");
+//		if (askStatus == true) {
+//			startCounter++;
+//
+//			if (startCounter == 5) {
+//				scoreDialog();
+//			}
+//
+//		} else {
+//			startCounter = 0;
+//		}
 
 	}
 
-	@Override
-	protected void onSaveInstanceState(Bundle outState) {
-		// TODO Auto-generated method stub
-		super.onSaveInstanceState(outState);
-
-		outState.putInt("Counter", startCounter);
-		outState.putBoolean("Ask Status", askStatus);
-
-	}
+//	@Override
+//	protected void onRestoreInstanceState(Bundle savedInstanceState) {
+//		// TODO Auto-generated method stub
+//		super.onRestoreInstanceState(savedInstanceState);
+//
+//		startCounter = savedInstanceState.getInt("Counter");
+//		askStatus = savedInstanceState.getBoolean("Ask Status");
+//
+//	}
+//
+//	@Override
+//	protected void onSaveInstanceState(Bundle outState) {
+//		// TODO Auto-generated method stub
+//		super.onSaveInstanceState(outState);
+//
+//		outState.putInt("Counter", startCounter);
+//		outState.putBoolean("Ask Status", askStatus);
+//
+//	}
 
 	private void initComponents() {
 
