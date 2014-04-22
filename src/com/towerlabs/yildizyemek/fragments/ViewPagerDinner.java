@@ -113,6 +113,7 @@ public class ViewPagerDinner extends Fragment {
 			ParseException, LastDayException {
 
 		viewPager = (ViewPager) view.findViewById(R.id.viewpager);
+		indicator = (CirclePageIndicator) view.findViewById(R.id.titless);
 
 		httpTask = new HttpTask();
 		urls = new String[1];
@@ -125,12 +126,8 @@ public class ViewPagerDinner extends Fragment {
 			adapter = new PageAdapter(getChildFragmentManager(), rawText);
 			viewPager.setAdapter(adapter);
 			// viewPager.setCurrentItem(3);
+			indicator.setViewPager(viewPager);
 		}
-
-		// ----------------------------------
-		indicator = (CirclePageIndicator) view.findViewById(R.id.titless);
-		// ----------------------------------
-		indicator.setViewPager(viewPager);
 
 	}
 

@@ -25,7 +25,8 @@
         android:theme="@style/CustomActionBarTheme" >
         <activity
             android:name="com.towerlabs.yildizyemek.SplashScreen"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
