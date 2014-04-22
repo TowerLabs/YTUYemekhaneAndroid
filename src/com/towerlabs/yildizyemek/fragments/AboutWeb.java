@@ -13,7 +13,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*/
-package com.towerlabs.yildizyemek;
+package com.towerlabs.yildizyemek.fragments;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -25,6 +25,9 @@ import android.view.View.OnKeyListener;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.towerlabs.yildizyemek.MainActivity;
+import com.towerlabs.yildizyemek.R;
 
 public class AboutWeb extends Fragment implements OnKeyListener {
 	public static String URL_KEY = "url_key";

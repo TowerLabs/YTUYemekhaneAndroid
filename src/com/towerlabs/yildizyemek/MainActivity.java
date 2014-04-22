@@ -35,6 +35,8 @@ import android.view.KeyEvent;
 import android.view.View;
 
 import com.towerlabs.yildizyemek.customviews.CustomButton;
+import com.towerlabs.yildizyemek.fragments.About;
+import com.towerlabs.yildizyemek.fragments.ViewPagerDinner;
 
 public class MainActivity extends ActionBarActivity implements
 		android.view.View.OnClickListener {

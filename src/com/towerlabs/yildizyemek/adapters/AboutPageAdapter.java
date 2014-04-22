@@ -1,4 +1,4 @@
-package com.towerlabs.yildizyemek;
+package com.towerlabs.yildizyemek.adapters;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import com.towerlabs.yildizyemek.R;
 import com.towerlabs.yildizyemek.customviews.CustomTextView;
 
 public class AboutPageAdapter extends BaseAdapter {

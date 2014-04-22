@@ -13,7 +13,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*/
-package com.towerlabs.yildizyemek;
+package com.towerlabs.yildizyemek.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -23,6 +23,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+
+import com.towerlabs.yildizyemek.MainActivity;
+import com.towerlabs.yildizyemek.R;
+import com.towerlabs.yildizyemek.adapters.AboutPageAdapter;
 
 public class About extends Fragment implements OnItemClickListener {
 

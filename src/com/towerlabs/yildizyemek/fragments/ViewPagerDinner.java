@@ -13,7 +13,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*/
-package com.towerlabs.yildizyemek;
+package com.towerlabs.yildizyemek.fragments;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -41,6 +41,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.towerlabs.yildizyemek.APILink;
+import com.towerlabs.yildizyemek.HttpTask;
+import com.towerlabs.yildizyemek.MainActivity;
+import com.towerlabs.yildizyemek.R;
+import com.towerlabs.yildizyemek.adapters.PageAdapter;
+import com.towerlabs.yildizyemek.exceptions.LastDayException;
 import com.viewpagerindicator.CirclePageIndicator;
 
 public class ViewPagerDinner extends Fragment {

@@ -26,6 +26,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.towerlabs.yildizyemek.exceptions.LastDayException;
+
 import android.util.Log;
 
 public class JSonProcess {

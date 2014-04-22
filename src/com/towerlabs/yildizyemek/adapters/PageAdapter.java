@@ -13,12 +13,18 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*/
-package com.towerlabs.yildizyemek;
+package com.towerlabs.yildizyemek.adapters;
 
 import java.text.ParseException;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import com.towerlabs.yildizyemek.FOOD;
+import com.towerlabs.yildizyemek.JSonProcess;
+import com.towerlabs.yildizyemek.MainActivity;
+import com.towerlabs.yildizyemek.exceptions.LastDayException;
+import com.towerlabs.yildizyemek.fragments.DinnerPage;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
