@@ -89,13 +89,11 @@ public class PageAdapter extends FragmentStatePagerAdapter {
 									arg0 + jsonProcess.getIndexPlus()))
 					.getString(FOOD.ALT_DINNER.getValue());
 			texts = jsonProcess.clearString(texts);
-			
+
 			if (texts[2].contains(uselessString))
 				texts[2] = texts[2].replace(uselessString, "");
-			
+
 			texts = jsonProcess.toUpperCaseWords(texts);
-			
-			
 
 		} catch (JSONException e) {
 			// // TODO Auto-generated catch block

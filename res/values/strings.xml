@@ -9,16 +9,17 @@
     <string name="dialog_ok">Tamam</string>
     <string name="dialog_yes">Evet</string>
     <string name="dialog_cancel">Hayır</string>
-    <string name="dialog_neutral">Değerledir</string>
+    <string name="dialog_neutral">Değerlendir</string>
     <string name="dialog_never_ask">Sorma</string>
     <string name="dialog_after">Daha Sonra</string>
     <string name="score_text">Ugulamamızı değerlendirmek ister misiniz ? </string>
     <string name="score_title">Değerlendir</string>
     <string name="exit_message">Çıkmak istiyor musunuz ?</string>
     <string name="exit_dialog_title">Çıkış</string>
-    <string name="connection_error_msg">Bağlantı hatası.</string>
+    <string name="connection_error_msg">Lütfen internet bağlantınızı kontrol ediniz.</string>
     <string name="new_list_error_msg">Bu aya ait liste henüz yayınlanmadı.</string>
     <string name="error">Hata</string>
+    <string name="error_connection">Bağlantı Hatası</string>
     <string name="main_button_text">Yemek Listesi</string>
     <string name="about_button_text">Hakkımızda</string>
     <string name="desc">description</string>
@@ -28,5 +29,6 @@
     <string name="developer">Çağdaş Çağlak</string>
     <string name="designer_twitter">\@davutucar</string>
     <string name="developer_twitter">+cagdascaglak</string>
+    <string name="about_page_loading">Sayfa Yükleniyor...</string>
 
 </resources>

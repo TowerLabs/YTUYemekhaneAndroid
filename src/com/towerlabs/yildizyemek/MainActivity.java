@@ -22,9 +22,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
-import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -66,54 +64,14 @@ public class MainActivity extends ActionBarActivity implements
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		initComponents();
-
-		if (savedInstanceState != null)
-			startCounter = savedInstanceState.getInt("Counter");
-
+		
 	}
-
-	@Override
-	protected void onResume() {
-		// TODO Auto-generated method stub
-		super.onResume();
-
-//		if (askStatus == true) {
-//			startCounter++;
-//
-//			if (startCounter == 5) {
-//				scoreDialog();
-//			}
-//
-//		} else {
-//			startCounter = 0;
-//		}
-
-	}
-
-//	@Override
-//	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-//		// TODO Auto-generated method stub
-//		super.onRestoreInstanceState(savedInstanceState);
-//
-//		startCounter = savedInstanceState.getInt("Counter");
-//		askStatus = savedInstanceState.getBoolean("Ask Status");
-//
-//	}
-//
-//	@Override
-//	protected void onSaveInstanceState(Bundle outState) {
-//		// TODO Auto-generated method stub
-//		super.onSaveInstanceState(outState);
-//
-//		outState.putInt("Counter", startCounter);
-//		outState.putBoolean("Ask Status", askStatus);
-//
-//	}
 
 	private void initComponents() {
 
 		getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 		getSupportActionBar().setCustomView(R.layout.activity_actionbar);
+
 		activity = MainActivity.this;
 
 		food = getResources().getDrawable(R.drawable.food);
@@ -154,6 +112,7 @@ public class MainActivity extends ActionBarActivity implements
 						foodDark, null, null);
 				about_button.setCompoundDrawablesWithIntrinsicBounds(null,
 						team, null, null);
+				
 			}
 
 			About.isWebPageOpen = false;
@@ -176,6 +135,7 @@ public class MainActivity extends ActionBarActivity implements
 						teamDark, null, null);
 				lunch_list_button.setCompoundDrawablesWithIntrinsicBounds(null,
 						food, null, null);
+
 			}
 
 		}
@@ -203,13 +163,13 @@ public class MainActivity extends ActionBarActivity implements
 		}
 	}
 
-	public static void errorDialog(String message) {
+	public static void errorDialog(int titleID, int messageID) {
 
 		AlertDialog.Builder builder = new AlertDialog.Builder(
 				MainActivity.activity);
 
-		builder.setTitle(R.string.error);
-		builder.setMessage(message);
+		builder.setTitle(titleID);
+		builder.setMessage(messageID);
 
 		builder.setPositiveButton(R.string.dialog_ok, new OnClickListener() {
 
@@ -244,48 +204,6 @@ public class MainActivity extends ActionBarActivity implements
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
-				dialog.dismiss();
-			}
-		});
-		dialog.create().show();
-
-	}
-
-	public static void scoreDialog() {
-
-		AlertDialog.Builder dialog = new AlertDialog.Builder(
-				MainActivity.activity);
-		dialog.setTitle(R.string.score_title);
-		dialog.setMessage(R.string.score_text);
-		dialog.setPositiveButton(R.string.dialog_ok, new OnClickListener() {
-
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				// TODO Auto-generated method stub
-				startCounter = 0;
-				Intent webActivity = new Intent(Intent.ACTION_VIEW);
-				 webActivity.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.towerlabs.yildizyemek"));
-//				webActivity.setData(Uri
-//						.parse("market://details?id=com.towerlabs.yildizyemek"));
-
-				activity.startActivity(webActivity);
-				dialog.dismiss();
-			}
-		}).setNeutralButton(R.string.dialog_after, new OnClickListener() {
-
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				// TODO Auto-generated method stub
-				askStatus = true;
-				startCounter = 0;
-				dialog.dismiss();
-			}
-		}).setNegativeButton(R.string.dialog_never_ask, new OnClickListener() {
-
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				// TODO Auto-generated method stub
-				askStatus = false;
 				dialog.dismiss();
 			}
 		});

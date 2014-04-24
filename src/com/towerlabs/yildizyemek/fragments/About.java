@@ -39,6 +39,7 @@ public class About extends Fragment implements OnItemClickListener {
 	private Integer[] titles;
 	private Integer[] subtitles;
 
+	private View view;
 	private ListView list;
 	private AboutPageAdapter adapter;
 
@@ -46,8 +47,7 @@ public class About extends Fragment implements OnItemClickListener {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		View view = inflater.inflate(R.layout.activity_about_page, container,
-				false);
+		view = inflater.inflate(R.layout.activity_about_page, container, false);
 		initComponents(view);
 		return view;
 	}

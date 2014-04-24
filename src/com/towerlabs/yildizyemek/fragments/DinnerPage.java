@@ -28,17 +28,13 @@ public class DinnerPage extends Fragment {
 
 	public static String BUNDLE_KEY = "arg_key";
 
-	private CustomTextView date_text;
-
-	private CustomTextView main_lunch_tv;
-
-	private CustomTextView alt_lunch_tv;
-
-	private CustomTextView main_dinner_tv;
-
-	private CustomTextView alt_dinner_tv;
-
 	private String[] texts;
+
+	private CustomTextView date_text;
+	private CustomTextView main_lunch_tv;
+	private CustomTextView alt_lunch_tv;
+	private CustomTextView main_dinner_tv;
+	private CustomTextView alt_dinner_tv;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -85,7 +81,6 @@ public class DinnerPage extends Fragment {
 		alt_lunch_tv.setText(texts[2]);
 		main_dinner_tv.setText(texts[3]);
 		alt_dinner_tv.setText(texts[4]);
-		
 
 	}
 

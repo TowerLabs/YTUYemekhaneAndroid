@@ -30,6 +30,7 @@ import com.towerlabs.yildizyemek.MainActivity;
 import com.towerlabs.yildizyemek.R;
 
 public class AboutWeb extends Fragment implements OnKeyListener {
+
 	public static String URL_KEY = "url_key";
 	private WebView webView;
 	private ProgressDialog webProgress;
@@ -58,7 +59,8 @@ public class AboutWeb extends Fragment implements OnKeyListener {
 
 		view.setOnKeyListener(this);
 		webProgress = new ProgressDialog(getActivity());
-		webProgress.setMessage("Sayfa Yükleniyor...");
+		webProgress.setMessage(getResources().getString(
+				R.string.about_page_loading));
 		webProgress.show();
 
 		webView = (WebView) view.findViewById(R.id.web_view);
@@ -115,8 +117,6 @@ public class AboutWeb extends Fragment implements OnKeyListener {
 			if (webView.canGoBack()) {
 				webView.goBack();
 			} else {
-				// getActivity().finish();
-
 				MainActivity.exitDialog();
 			}
 

@@ -36,7 +36,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -100,6 +99,9 @@ public class ViewPagerDinner extends Fragment {
 		} catch (LastDayException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			MainActivity.errorDialog(R.string.error,
+					R.string.new_list_error_msg);
+			MainActivity.activity.finish();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -148,7 +150,7 @@ public class ViewPagerDinner extends Fragment {
 
 		if (!file.exists()) {
 
-			Log.d("girdimi", "girdi");
+			// Log.d("girdimi", "girdi");
 
 			httpTask.execute(urls[0]);
 
@@ -159,8 +161,8 @@ public class ViewPagerDinner extends Fragment {
 				if (!correctDate(rawText).equalsIgnoreCase(
 						MainActivity.fileName)) {
 
-					MainActivity.errorDialog(getResources().getString(
-							R.string.new_list_error_msg));
+					MainActivity.errorDialog(R.string.error,
+							R.string.new_list_error_msg);
 
 					return false;
 				}
@@ -179,8 +181,8 @@ public class ViewPagerDinner extends Fragment {
 
 			} else {
 
-				MainActivity.errorDialog(getResources().getString(
-						R.string.connection_error_msg));
+				MainActivity.errorDialog(R.string.error_connection,
+						R.string.connection_error_msg);
 
 				return false;
 			}
