@@ -20,16 +20,16 @@ import java.text.ParseException;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.util.Log;
+
 import com.towerlabs.yildizyemek.FOOD;
 import com.towerlabs.yildizyemek.JSonProcess;
 import com.towerlabs.yildizyemek.MainActivity;
 import com.towerlabs.yildizyemek.exceptions.LastDayException;
 import com.towerlabs.yildizyemek.fragments.DinnerPage;
-
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.util.Log;
 
 public class PageAdapter extends FragmentStatePagerAdapter {
 

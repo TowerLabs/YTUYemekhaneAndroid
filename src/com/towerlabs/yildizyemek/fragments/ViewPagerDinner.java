@@ -87,24 +87,43 @@ public class ViewPagerDinner extends Fragment {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			if (file.exists()) {
+				file.delete();
+			}
 		} catch (ExecutionException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			if (file.exists()) {
+				file.delete();
+			}
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			if (file.exists()) {
+				file.delete();
+			}
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			if (file.exists()) {
+				file.delete();
+			}
 		} catch (LastDayException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			if (file.exists()) {
+				file.delete();
+			}
 			MainActivity.errorDialog(R.string.error,
 					R.string.new_list_error_msg);
-			MainActivity.activity.finish();
+			// MainActivity.activity.finish(); //02/05/2014
+
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			if (file.exists()) {
+				file.delete();
+			}
 		}
 
 		return view;
@@ -186,9 +205,10 @@ public class ViewPagerDinner extends Fragment {
 
 				return false;
 			}
-
 		}
+
 		return true;
+
 	}
 
 	public String readFile() throws IOException {
