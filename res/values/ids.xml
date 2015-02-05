@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <item name="viewpager" type="id">viewpager</item>
+    
+   <item name="viewpager" type="id">viewpager</item>
     <item name="date_textview" type="id">date_text</item>
     <item name="main_lunch" type="id">main_lunch</item>
     <item name="alt_lunch" type="id">alt_lunch</item>
@@ -26,5 +26,5 @@
     <item name="developer_button" type="id">"developer_button"</item>
     <item name="designer_twitter_button" type="id">"designer_twitter_button"</item>
     <item name="developer_twitter_button" type="id">"developer_twitter_button"</item>
-
+    
 </resources>

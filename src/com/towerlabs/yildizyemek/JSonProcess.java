@@ -26,7 +26,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.util.Log;
+import com.towerlabs.yildizyemek.exceptions.LastDayException;
 
 public class JSonProcess {
 
@@ -48,20 +48,24 @@ public class JSonProcess {
 		datesDate = new ArrayList<Date>();
 		datesString = new ArrayList<String>();
 
-		Log.d("available", String.valueOf(jsonArray.length()));
+		// Log.d("available", String.valueOf(jsonArray.length()));
 
 		jsonObject = new JSONObject[jsonArray.length()];
 
 		int tempIndex = 0;
 
+		Iterator<?> it = null;
+		Date tempDate = null;
+		String tempKey = null;
+
 		for (int i = 0; i < jsonArray.length(); i++) {
 			jsonObject[i] = jsonArray.getJSONObject(i);
 
-			Iterator<?> it = jsonObject[i].keys();
-			Date tempDate = null;
+			it = jsonObject[i].keys();
+
 			while (it.hasNext()) {
 				// Log.d("iterator", (String) it.next());
-				String tempKey = (String) it.next();
+				tempKey = (String) it.next();
 				datesString.add(i, tempKey);
 
 				tempDate = new SimpleDateFormat("dd.MM.yyyy",
@@ -78,6 +82,10 @@ public class JSonProcess {
 				tempIndex = i + 1;
 			}
 
+			it = null;
+			// tempDate = null;
+			tempKey = null;
+
 		}
 
 		if (tempIndex > (jsonArray.length() - 1)) {
@@ -88,7 +96,7 @@ public class JSonProcess {
 		else
 			setIndexPlus(tempIndex);
 
-		Log.d("index", String.valueOf(indexPlus));
+		// Log.d("index", String.valueOf(indexPlus));
 
 	}
 
@@ -138,17 +146,17 @@ public class JSonProcess {
 	}
 
 	public String[] toUpperCaseWords(String[] texts) {
-		
+
 		boolean isSpecialChar;
 		char[] charsStr;
-		
+
 		for (int i = 0; i < texts.length; i++) {
-			
+
 			isSpecialChar = false;
 			charsStr = texts[i].toLowerCase(Locale.getDefault()).toCharArray();
-			
+
 			for (int j = 0; j < charsStr.length; j++) {
-				
+
 				if (Character.isLetter(charsStr[j])) {
 					if (!isSpecialChar) {
 						charsStr[j] = Character.toUpperCase(charsStr[j]);
@@ -158,9 +166,9 @@ public class JSonProcess {
 					isSpecialChar = false;
 				}
 			}
-			
+
 			texts[i] = new String(charsStr);
-			
+
 		}
 
 		return texts;

@@ -25,15 +25,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="6"
-        android:background="@drawable/border"
         android:weightSum="2" >
 
         <com.towerlabs.yildizyemek.customviews.CustomButton
             android:id="@id/main_button_main"
-            style="?android:attr/buttonBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@android:color/transparent"
             android:contentDescription="@string/dialog_icon_desc"
             android:drawableTop="@drawable/fooddark"
             android:text="@string/lunch_list"
@@ -42,10 +41,10 @@
 
         <com.towerlabs.yildizyemek.customviews.CustomButton
             android:id="@id/about_button_main"
-            style="?android:attr/buttonBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@android:color/transparent"
             android:contentDescription="@string/dialog_icon_desc"
             android:drawableTop="@drawable/team"
             android:text="@string/about_text"

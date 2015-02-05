@@ -24,6 +24,6 @@
         caca:pageColor="@android:color/white"
         caca:radius="5dp"
         caca:strokeColor="@android:color/white"
-        caca:strokeWidth="3dp" />
+        caca:strokeWidth="1dp" />
 
 </LinearLayout>
